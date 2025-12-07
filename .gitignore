@@ -1,4 +1,6 @@
-
+# Yarn v4 / PnP
+# 전체 .yarn 폴더를 무시하되,
+# cache, patches, plugins, releases, sdks, versions 는 추적해야 함
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -6,3 +8,10 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Yarn PnP
+.pnp.cjs
+.pnp.loader.mjs
+
+# Build output
+dist/
